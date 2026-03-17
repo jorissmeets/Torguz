@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NTKF - Nederlandse Toguz Korgool Federatie</title>
+    <meta name="description" content="De Nederlandse Toguz Korgool Federatie (NTKF) bevordert het eeuwenoude strategiespel Toguz Korgool in Nederland. Word lid en doe mee aan de World Nomad Games 2026.">
+    <meta name="keywords" content="toguz korgool, toguz kumalak, mancala, Nederland, federatie, World Nomad Games 2026, strategiespel, UNESCO erfgoed">
+    <meta property="og:title" content="Nederlandse Toguz Korgool Federatie">
+    <meta property="og:description" content="Het eeuwenoude strategiespel uit Centraal-Azie, nu in Nederland.">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navigatie -->
+    <nav class="nav" id="nav">
+        <div class="container nav__inner">
+            <a href="#hero" class="nav__logo">
+                <span class="nav__logo-icon">&#9823;</span>
+                <div class="nav__logo-text">
+                    <strong>NTKF</strong>
+                    <small>Nederlandse Toguz Korgool Federatie</small>
+                </div>
+            </a>
+            <button class="nav__toggle" id="navToggle" aria-label="Menu openen">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav__links" id="navLinks">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#spel">Het Spel</a></li>
+                <li><a href="#federatie">Federatie</a></li>
+                <li><a href="#meedoen">Meedoen</a></li>
+                <li><a href="nieuws.html">Nieuws</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+        <div class="hero__overlay"></div>
+        <div class="hero__pattern"></div>
+        <div class="container hero__content">
+            <h1 class="hero__title animate-in">Nederlandse Toguz Korgool Federatie</h1>
+            <p class="hero__subtitle animate-in">Het eeuwenoude strategiespel uit Centraal-Azie &mdash; nu in Nederland</p>
+            <div class="hero__buttons animate-in">
+                <a href="#spel" class="btn btn--primary">Ontdek het spel</a>
+                <a href="#meedoen" class="btn btn--secondary">Word lid</a>
+            </div>
+        </div>
+        <!-- Decoratieve board-illustratie -->
+        <div class="hero__board-decoration">
+            <div class="pit"></div><div class="pit"></div><div class="pit"></div>
+            <div class="pit"></div><div class="pit"></div><div class="pit"></div>
+            <div class="pit"></div><div class="pit"></div><div class="pit"></div>
+        </div>
+    </section>
+
+    <!-- Introductie kaarten -->
+    <section class="intro" id="intro">
+        <div class="container">
+            <div class="intro__grid">
+                <div class="intro__card animate-in">
+                    <div class="intro__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                    </div>
+                    <h3>UNESCO Erfgoed</h3>
+                    <p>Toguz Korgool is sinds 2020 erkend als Immaterieel Cultureel Erfgoed van de Mensheid door UNESCO.</p>
+                </div>
+                <div class="intro__card animate-in">
+                    <div class="intro__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    </div>
+                    <h3>World Nomad Games 2026</h3>
+                    <p>31 augustus &ndash; 6 september 2026 in Kirgizistan. Nederland doet mee!</p>
+                </div>
+                <div class="intro__card animate-in">
+                    <div class="intro__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    </div>
+                    <h3>Word Lid</h3>
+                    <p>De NTKF staat open voor iedereen. Geen ervaring nodig &mdash; we helpen je op weg.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Over Toguz Korgool -->
+    <section class="section section--light" id="spel">
+        <div class="container">
+            <div class="section__header animate-in">
+                <h2>Over Toguz Korgool</h2>
+                <p class="section__lead">Een van de oudste en diepste strategiespellen ter wereld</p>
+            </div>
+            <div class="game-info">
+                <div class="game-info__text animate-in">
+                    <h3>Wat is Toguz Korgool?</h3>
+                    <p>
+                        Toguz Korgool (Kirgizisch voor "negen stenen") is een strategisch bordspel uit de mancala-familie,
+                        al duizenden jaren gespeeld in Centraal-Azie. Het spel wordt gespeeld op een bord met twee rijen
+                        van negen kuiltjes, met aan elke kant een <em>kazan</em> (vangbak). Elke partij begint met
+                        162 stenen &mdash; 9 in elk kuiltje.
+                    </p>
+                    <h3>Hoe werkt het?</h3>
+                    <p>
+                        Spelers verdelen om de beurt stenen uit een kuiltje over het bord (dit heet <em>zaaien</em>).
+                        Het doel is om meer dan 81 stenen in je kazan te verzamelen. Een uniek element is de <em>tuz</em>:
+                        een speciaal veroverd kuiltje bij de tegenstander dat continu stenen voor je opvangt.
+                    </p>
+                    <h3>Waarom Toguz Korgool?</h3>
+                    <ul class="game-info__features">
+                        <li>
+                            <strong>Puur strategie</strong> &mdash; geen dobbelstenen, geen geluksfactor, net als schaken
+                        </li>
+                        <li>
+                            <strong>UNESCO Erfgoed</strong> &mdash; sinds 2020 erkend als Immaterieel Cultureel Erfgoed
+                        </li>
+                        <li>
+                            <strong>Eeuwenoud</strong> &mdash; naar schatting 4.000 jaar oud, vermeld in het Kirgizische epos Manas
+                        </li>
+                        <li>
+                            <strong>Internationaal</strong> &mdash; gespeeld in 21+ landen met tweejaarlijkse wereldkampioenschappen
+                        </li>
+                    </ul>
+                </div>
+                <div class="game-info__visual animate-in">
+                    <div class="board-diagram">
+                        <div class="board-diagram__label">Tegenstander</div>
+                        <div class="board-diagram__row">
+                            <div class="board-diagram__pit">9</div>
+                            <div class="board-diagram__pit">9</div>
+                            <div class="board-diagram__pit">9</div>
+                            <div class="board-diagram__pit">9</div>
+                            <div class="board-diagram__pit">9</div>
+                            <div class="board-diagram__pit">9</div>
+                            <div class="board-diagram__pit">9</div>
+                            <div class="board-diagram__pit">9</div>
+                            <div class="board-diagram__pit">9</div>
+                        </div>
+                        <div class="board-diagram__kazans">
+                            <div class="board-diagram__kazan">Kazan<br><span>0</span></div>
+                            <div class="board-diagram__kazan">Kazan<br><span>0</span></div>
+                        </div>
+                        <div class="board-diagram__row">
+                            <div class="board-diagram__pit">9</div>
+                            <div class="board-diagram__pit">9</div>
+                            <div class="board-diagram__pit">9</div>
+                            <div class="board-diagram__pit">9</div>
+                            <div class="board-diagram__pit">9</div>
+                            <div class="board-diagram__pit">9</div>
+                            <div class="board-diagram__pit">9</div>
+                            <div class="board-diagram__pit">9</div>
+                            <div class="board-diagram__pit">9</div>
+                        </div>
+                        <div class="board-diagram__label">Jouw kant</div>
+                    </div>
+                    <p class="board-diagram__caption">Startopstelling: 9 stenen in elk van de 18 kuiltjes (162 totaal)</p>
+                    <div class="game-info__links">
+                        <a href="https://www.toguzkorgool.com/en/game-guide" target="_blank" rel="noopener" class="btn btn--small">Volledige spelregels &rarr;</a>
+                        <a href="https://www.playok.com/en/togyzkumalak/" target="_blank" rel="noopener" class="btn btn--small btn--outline">Online spelen &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Over de Federatie -->
+    <section class="section section--dark" id="federatie">
+        <div class="container">
+            <div class="section__header animate-in">
+                <h2>Over de Federatie</h2>
+                <p class="section__lead">De NTKF zet zich in voor de promotie en ontwikkeling van Toguz Korgool in Nederland</p>
+            </div>
+            <div class="federation">
+                <div class="federation__goals animate-in">
+                    <h3>Onze doelen</h3>
+                    <ul class="federation__list">
+                        <li>
+                            <span class="federation__list-icon">&#9670;</span>
+                            Toguz Korgool bekendheid geven in Nederland
+                        </li>
+                        <li>
+                            <span class="federation__list-icon">&#9670;</span>
+                            Nederlandse spelers vertegenwoordigen op internationale toernooien
+                        </li>
+                        <li>
+                            <span class="federation__list-icon">&#9670;</span>
+                            Deelname aan de World Nomad Games 2026 in Kirgizistan
+                        </li>
+                        <li>
+                            <span class="federation__list-icon">&#9670;</span>
+                            Samenwerking met de World Ethnosport Confederation en World Toguz Kumalak Federation
+                        </li>
+                        <li>
+                            <span class="federation__list-icon">&#9670;</span>
+                            Toernooien en evenementen organiseren in Nederland
+                        </li>
+                        <li>
+                            <span class="federation__list-icon">&#9670;</span>
+                            Verbinding leggen met schaakverenigingen en spellenclubs
+                        </li>
+                    </ul>
+                </div>
+                <div class="federation__spotlight animate-in">
+                    <div class="spotlight-card">
+                        <div class="spotlight-card__badge">2026</div>
+                        <h3>World Nomad Games</h3>
+                        <div class="spotlight-card__details">
+                            <div class="spotlight-card__item">
+                                <span class="spotlight-card__label">Datum</span>
+                                <span>31 augustus &ndash; 6 september 2026</span>
+                            </div>
+                            <div class="spotlight-card__item">
+                                <span class="spotlight-card__label">Locatie</span>
+                                <span>Bishkek &amp; Issyk-Kul, Kirgizistan</span>
+                            </div>
+                            <div class="spotlight-card__item">
+                                <span class="spotlight-card__label">Discipline</span>
+                                <span>Toguz Korgool (1 van 21 sporten)</span>
+                            </div>
+                            <div class="spotlight-card__item">
+                                <span class="spotlight-card__label">Ambitie</span>
+                                <span>Nederland vertegenwoordigen als NTKF</span>
+                            </div>
+                        </div>
+                        <a href="https://worldnomadgames.org/en/" target="_blank" rel="noopener" class="btn btn--gold btn--small">Meer over de World Nomad Games &rarr;</a>
+                    </div>
+                </div>
+            </div>
+            <div class="federation__founder animate-in">
+                <blockquote>
+                    "Als schaker (FIDE-rating ~2150) ben ik altijd gefascineerd geweest door strategische spellen.
+                    Toguz Korgool is een verborgen juweeltje &mdash; even diep als schaken, maar vrijwel onbekend in Nederland.
+                    Met de NTKF wil ik daar verandering in brengen en Nederland op de kaart zetten bij de World Nomad Games."
+                </blockquote>
+                <cite>&mdash; Oprichter NTKF</cite>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meedoen -->
+    <section class="section section--light" id="meedoen">
+        <div class="container">
+            <div class="section__header animate-in">
+                <h2>Meedoen</h2>
+                <p class="section__lead">Er zijn verschillende manieren om bij te dragen aan Toguz Korgool in Nederland</p>
+            </div>
+            <div class="join__grid">
+                <div class="join__card animate-in">
+                    <div class="join__card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+                    </div>
+                    <h3>Speler worden</h3>
+                    <p>
+                        Leer Toguz Korgool spelen, oefen online en neem deel aan toernooien.
+                        Ervaring met het spel is niet nodig &mdash; we helpen je op weg.
+                        Achtergrond in schaken of andere strategiespellen is een plus!
+                    </p>
+                    <a href="#contact" class="btn btn--primary btn--small">Aanmelden</a>
+                </div>
+                <div class="join__card animate-in">
+                    <div class="join__card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                    </div>
+                    <h3>Vrijwilliger worden</h3>
+                    <p>
+                        Help mee met de organisatie van evenementen, communicatie,
+                        websitebeheer of het opzetten van lokale speelgroepen.
+                        Elke bijdrage telt!
+                    </p>
+                    <a href="#contact" class="btn btn--primary btn--small">Neem contact op</a>
+                </div>
+                <div class="join__card animate-in">
+                    <div class="join__card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                    </div>
+                    <h3>Partner worden</h3>
+                    <p>
+                        Schaakverenigingen, spellenclubs, culturele organisaties en bedrijven
+                        die Toguz Korgool willen ondersteunen zijn van harte welkom als partner.
+                    </p>
+                    <a href="#contact" class="btn btn--primary btn--small">Samenwerken</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nieuws -->
+    <section class="section section--white" id="nieuws">
+        <div class="container">
+            <div class="section__header animate-in">
+                <h2>Nieuws</h2>
+                <p class="section__lead">Het laatste nieuws van de NTKF</p>
+            </div>
+            <div class="news__grid">
+                <article class="news__card animate-in">
+                    <div class="news__date">17 maart 2026</div>
+                    <h3>NTKF opgericht</h3>
+                    <p>Nederland heeft nu een eigen Toguz Korgool federatie! De NTKF is opgericht met als doel het spel in Nederland te promoten en Nederlandse spelers internationaal te vertegenwoordigen.</p>
+                    <a href="nieuws.html#ntkf-opgericht">Lees meer &rarr;</a>
+                </article>
+                <article class="news__card animate-in">
+                    <div class="news__date">17 maart 2026</div>
+                    <h3>World Nomad Games 2026</h3>
+                    <p>De NTKF bereidt zich voor op deelname aan de World Nomad Games 2026 in Kirgizistan. Nederland gaat voor het eerst meedoen aan het Toguz Korgool-toernooi!</p>
+                    <a href="nieuws.html#wng-2026">Lees meer &rarr;</a>
+                </article>
+                <article class="news__card animate-in">
+                    <div class="news__date">Binnenkort</div>
+                    <h3>Eerste workshop gepland</h3>
+                    <p>We organiseren binnenkort de eerste Toguz Korgool-workshop in Nederland. Leer de basisregels en speel je eerste partijen onder begeleiding.</p>
+                    <a href="nieuws.html#workshop">Lees meer &rarr;</a>
+                </article>
+            </div>
+            <div class="news__more animate-in">
+                <a href="nieuws.html" class="btn btn--outline">Alle nieuwsberichten &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section--light" id="contact">
+        <div class="container">
+            <div class="section__header animate-in">
+                <h2>Contact</h2>
+                <p class="section__lead">Vragen, suggesties of wil je je aanmelden? Neem contact op!</p>
+            </div>
+            <div class="contact__grid">
+                <div class="contact__info animate-in">
+                    <div class="contact__item">
+                        <h3>E-mail</h3>
+                        <a href="mailto:info@ntkf.nl">info@ntkf.nl</a>
+                    </div>
+                    <div class="contact__item">
+                        <h3>Volg ons</h3>
+                        <div class="contact__social">
+                            <a href="#" aria-label="Instagram" class="contact__social-link">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                            </a>
+                            <a href="#" aria-label="Facebook" class="contact__social-link">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                            </a>
+                            <a href="#" aria-label="X / Twitter" class="contact__social-link">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4l11.733 16h4.267l-11.733 -16z"/><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact__item">
+                        <h3>Locatie</h3>
+                        <p>Nederland</p>
+                    </div>
+                </div>
+                <form class="contact__form animate-in" id="contactForm">
+                    <div class="form__group">
+                        <label for="name">Naam</label>
+                        <input type="text" id="name" name="name" required placeholder="Je naam">
+                    </div>
+                    <div class="form__group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" required placeholder="je@email.nl">
+                    </div>
+                    <div class="form__group">
+                        <label for="subject">Onderwerp</label>
+                        <select id="subject" name="subject">
+                            <option value="algemeen">Algemene vraag</option>
+                            <option value="lid">Lid worden</option>
+                            <option value="vrijwilliger">Vrijwilliger worden</option>
+                            <option value="partner">Partner worden</option>
+                            <option value="anders">Anders</option>
+                        </select>
+                    </div>
+                    <div class="form__group">
+                        <label for="message">Bericht</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Je bericht..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary">Versturen</button>
+                    <div class="form__success" id="formSuccess">
+                        Bedankt voor je bericht! We nemen zo snel mogelijk contact met je op.
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <div class="footer__logo">
+                        <span class="nav__logo-icon">&#9823;</span>
+                        <strong>NTKF</strong>
+                    </div>
+                    <p>Nederlandse Toguz Korgool Federatie &mdash; het eeuwenoude strategiespel uit Centraal-Azie, nu in Nederland.</p>
+                </div>
+                <div class="footer__links">
+                    <h4>Navigatie</h4>
+                    <ul>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#spel">Het Spel</a></li>
+                        <li><a href="#federatie">Federatie</a></li>
+                        <li><a href="#meedoen">Meedoen</a></li>
+                        <li><a href="nieuws.html">Nieuws</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer__links">
+                    <h4>Externe links</h4>
+                    <ul>
+                        <li><a href="https://www.playok.com/en/togyzkumalak/" target="_blank" rel="noopener">Online spelen (PlayOK)</a></li>
+                        <li><a href="https://www.toguzkorgool.com/en/game-guide" target="_blank" rel="noopener">Spelregels</a></li>
+                        <li><a href="https://worldnomadgames.org/en/" target="_blank" rel="noopener">World Nomad Games</a></li>
+                        <li><a href="https://ich.unesco.org/en/RL/01597" target="_blank" rel="noopener">UNESCO Erfgoed</a></li>
+                    </ul>
+                </div>
+                <div class="footer__affiliations">
+                    <h4>Affiliaties</h4>
+                    <p>World Ethnosport Confederation</p>
+                    <p>World Toguz Kumalak Federation</p>
+                    <p>UNESCO ICH</p>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2026 Nederlandse Toguz Korgool Federatie (NTKF). Alle rechten voorbehouden.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
