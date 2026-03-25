@@ -5,6 +5,54 @@
 (function () {
     'use strict';
 
+    // --- Language Switcher ---
+    let currentLang = localStorage.getItem('ntkf-lang') || 'nl';
+
+    function setLanguage(lang) {
+        currentLang = lang;
+        localStorage.setItem('ntkf-lang', lang);
+        document.documentElement.lang = lang;
+
+        // Update active button
+        document.querySelectorAll('.lang-btn').forEach(btn => {
+            btn.classList.toggle('active', btn.dataset.lang === lang);
+        });
+
+        // Translate text content
+        document.querySelectorAll('[data-i18n]').forEach(el => {
+            const key = el.getAttribute('data-i18n');
+            if (translations[key] && translations[key][lang]) {
+                el.textContent = translations[key][lang];
+            }
+        });
+
+        // Translate HTML content (for elements with <em>, <strong>, etc.)
+        document.querySelectorAll('[data-i18n-html]').forEach(el => {
+            const key = el.getAttribute('data-i18n-html');
+            if (translations[key] && translations[key][lang]) {
+                el.innerHTML = translations[key][lang];
+            }
+        });
+
+        // Translate placeholders
+        document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+            const key = el.getAttribute('data-i18n-placeholder');
+            if (translations[key] && translations[key][lang]) {
+                el.placeholder = translations[key][lang];
+            }
+        });
+    }
+
+    // Initialize language buttons
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            setLanguage(btn.dataset.lang);
+        });
+    });
+
+    // Set initial language
+    setLanguage(currentLang);
+
     // --- Mobile Navigation ---
     const navToggle = document.getElementById('navToggle');
     const navLinks = document.getElementById('navLinks');
@@ -24,7 +72,6 @@
 
     // --- Sticky Nav Background ---
     const nav = document.getElementById('nav');
-    const hero = document.querySelector('.hero');
 
     function updateNav() {
         if (window.scrollY > 80) {
@@ -67,9 +114,8 @@
     const animateElements = document.querySelectorAll('.animate-in');
 
     const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry, index) => {
+        entries.forEach((entry) => {
             if (entry.isIntersecting) {
-                // Stagger animation for siblings
                 const delay = Array.from(entry.target.parentElement.children)
                     .filter(el => el.classList.contains('animate-in'))
                     .indexOf(entry.target) * 100;
@@ -96,7 +142,6 @@
         form.addEventListener('submit', (e) => {
             e.preventDefault();
 
-            // Basic validation
             const name = form.querySelector('#name').value.trim();
             const email = form.querySelector('#email').value.trim();
             const message = form.querySelector('#message').value.trim();
@@ -105,11 +150,9 @@
                 return;
             }
 
-            // Show success message
             formSuccess.classList.add('show');
             form.reset();
 
-            // Hide after 5 seconds
             setTimeout(() => {
                 formSuccess.classList.remove('show');
             }, 5000);

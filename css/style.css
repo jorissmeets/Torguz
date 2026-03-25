@@ -182,6 +182,39 @@ ul {
     color: var(--gold);
 }
 
+/* Language Switcher */
+.lang-switcher {
+    display: flex;
+    gap: 4px;
+    margin-left: auto;
+    margin-right: 1.5rem;
+}
+
+.lang-btn {
+    background: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 0.25rem 0.6rem;
+    border-radius: 4px;
+    font-family: var(--font);
+    font-size: 0.75rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all var(--transition);
+    letter-spacing: 0.5px;
+}
+
+.lang-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: var(--white);
+}
+
+.lang-btn.active {
+    background: var(--gold);
+    color: var(--dark);
+    border-color: var(--gold);
+}
+
 /* Hamburger */
 .nav__toggle {
     display: none;
@@ -680,27 +713,68 @@ ul {
     min-width: 90px;
 }
 
-/* Founder quote */
-.federation__founder {
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
-    padding-top: 2rem;
+/* Founders Section */
+.founders {
+    padding-top: 3rem;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.federation__founder blockquote {
-    font-size: 1.15rem;
-    font-style: italic;
-    line-height: 1.8;
-    color: rgba(255, 255, 255, 0.85);
-    margin-bottom: 1rem;
+.founders__title {
+    text-align: center;
+    font-size: 1.4rem;
+    color: var(--gold);
+    margin-bottom: 2rem;
 }
 
-.federation__founder cite {
+.founders__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.founders__card {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius);
+    padding: 2rem 1.5rem;
+    backdrop-filter: blur(8px);
+    transition: transform var(--transition);
+}
+
+.founders__card:hover {
+    transform: translateY(-4px);
+}
+
+.founders__photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 1.25rem;
+    border: 3px solid var(--gold);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.founders__card h4 {
+    font-size: 1.15rem;
+    color: var(--white);
+    margin-bottom: 0.25rem;
+}
+
+.founders__role {
+    font-size: 0.85rem;
     color: var(--gold);
-    font-style: normal;
     font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
+.founders__desc {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.6;
 }
 
 /* ============================================
@@ -1054,6 +1128,17 @@ ul {
         padding: 0.75rem 0;
         display: block;
         border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    /* Language switcher mobile */
+    .lang-switcher {
+        margin-right: 0.75rem;
+    }
+
+    /* Founders */
+    .founders__grid {
+        grid-template-columns: 1fr;
+        max-width: 350px;
     }
 
     /* Grids */
